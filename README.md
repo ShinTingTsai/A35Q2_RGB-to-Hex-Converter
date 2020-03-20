@@ -5,6 +5,7 @@ A simple converter for RGB code transfer to Hex code
 ## Features
 
 - RGB to Hex
+- Range input tool to change R/G/B, new value will be shown during the change (not after mouse-up)
 - Used Regular Expression for checking integer
 
 ## Function used
@@ -23,3 +24,13 @@ A simple converter for RGB code transfer to Hex code
       } else return false
     } else return false;
   }
+
+   $(document).on('input', '#blueRange', function () {
+    blue.value = event.target.value
+    updateHex(red.value, green.value, blue.value)
+  });
+
+  redRange.addEventListener("change", event => {
+     red.value = event.target.value
+     updateHex(red.value, green.value, blue.value)
+  })
