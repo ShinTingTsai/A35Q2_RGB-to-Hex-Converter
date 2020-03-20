@@ -17,7 +17,7 @@
       alert('Please type in the integer between 0 to 255')
     }
   })
-  
+
   function toHex(input) {
     let result = Number(input).toString(16)
     if (result.length === 1) result = "0" + result
@@ -31,6 +31,6 @@
         return true
       } else return false
     } else return false;
-}
+  }
 
 })()
