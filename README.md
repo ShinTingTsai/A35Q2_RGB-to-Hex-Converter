@@ -1,4 +1,4 @@
-# Movie List
+# RGB to Hex Converter
 
 A simple converter for RGB code transfer to Hex code
 
