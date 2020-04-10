@@ -8,14 +8,15 @@ A simple converter for RGB code transfer to Hex code
 - Range input tool to change R/G/B, new value will be shown during the change (not after mouse-up)
 - Used Regular Expression for checking integer
 
-## Function used
-
+## Functions used
+``` js
   function toHex(input) {
     let result = Number(input).toString(16)
     if (result.length === 1) result = "0" + result
     return result
   }
-
+```
+``` js
   function checkInt(input) {
     if (/^(\-|\+)?([0-9]+)$/.test(input)) {
       let num = Number(input)
@@ -34,3 +35,4 @@ A simple converter for RGB code transfer to Hex code
      red.value = event.target.value
      updateHex(red.value, green.value, blue.value)
   })
+  ```
